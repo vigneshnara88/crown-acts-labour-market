@@ -1,0 +1,14 @@
+table,outcome,comparison,estimate,std_error,p_value,units,source
+1,employment_rate,four_group,0.004,0.355,0.99,percentage points,Manuscript Table 1
+1,labour_force_participation,four_group,0.006,0.342,0.99,percentage points,Manuscript Table 1
+1,self_employment_rate,four_group,-0.021,0.150,0.89,percentage points,Manuscript Table 1
+1,log_wage_income,four_group,-2.210,1.128,0.05,100 x log units,Manuscript Table 1
+2,managerial_professional,four_group,-0.724,0.835,0.39,percentage points,Manuscript Table 2
+2,customer_facing_top_quartile,four_group,-0.309,0.623,0.62,percentage points,Manuscript Table 2
+2,interpersonal_top_quartile,four_group,-0.683,0.615,0.27,percentage points,Manuscript Table 2
+2,managerial_onet_top_quartile,four_group,-0.674,0.489,0.17,percentage points,Manuscript Table 2
+2,subjective_evaluation_top_quartile,four_group,-1.161,0.659,0.08,percentage points,Manuscript Table 2
+3,employment_rate,BW_vs_BM,0.364,0.459,0.43,percentage points,Manuscript Table 3
+3,labour_force_participation,BW_vs_BM,0.330,0.367,0.37,percentage points,Manuscript Table 3
+3,employment_rate,BW_vs_WW,-0.128,0.559,0.82,percentage points,Manuscript Table 3
+3,labour_force_participation,BW_vs_WW,-0.165,0.487,0.74,percentage points,Manuscript Table 3
