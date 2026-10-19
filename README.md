@@ -4,6 +4,20 @@ This project studies whether state protections against hair discrimination are a
 
 The analysis uses IPUMS American Community Survey records for non-Hispanic Black and White adults aged 25–64, over 2015–2024. Person weights form state–year–race/sex cells. Weighted regressions compare Black women with the other groups while absorbing state-year, state-group, and year-group fixed effects. Standard errors are clustered by state.
 
+## Why study hair-discrimination protections?
+
+A narrowly targeted legal protection can raise a broader economic question: does changing what employers are allowed to discriminate against translate into measurable changes in people's working lives? This project studies that question for CROWN Acts, with a particular focus on Black women. Employment, participation, earnings and occupational access capture different possible margins of adjustment. A policy could affect who enters work, the jobs available to them, or earnings among people already employed; those outcomes need not move together.
+
+The empirical challenge is that labour-market outcomes also respond to national conditions, state-specific shocks and long-standing differences between demographic groups. A simple comparison of states with and without a law would mix those influences with the policy. The research therefore asks a more specific question: **after a state adopts a protection, do Black women's outcomes change differently from the outcomes of the comparison groups, relative to the corresponding differences in other state-years?**
+
+## How the comparison works
+
+The design combines three dimensions: state, year and race/sex group. State-year fixed effects account for changes shared by the groups in a particular state and year. State-group fixed effects account for persistent differences between those groups within a state. Year-group fixed effects account for national changes specific to each group. The remaining policy coefficient describes the differential change for Black women after adoption under this specification.
+
+For intuition, an improvement in a state's labour market that benefits every group should be absorbed by the state-year comparison. A nationwide change affecting Black women should be absorbed by the year-group comparison. The coefficient is intended to isolate what remains when those patterns are accounted for. This still requires an assumption that relevant group differences would have evolved comparably without the law; the fixed effects do not establish that assumption on their own.
+
+The code makes the measurement choices part of the analysis. It builds survey-weighted cells, uses a separate denominator for each outcome, and allows policy exposure to reflect a full calendar year or a fraction of a year. In particular, wages are measured among positive earners, so their interpretation differs from a population employment rate. The manuscript results below should be read alongside those sample and outcome definitions.
+
 ## Reported in the paper
 
 The manuscript's main estimates show small differential changes in employment, participation, and self-employment. The wage estimate is negative; that outcome conditions on positive earnings and can also reflect changes in the composition of earners.
